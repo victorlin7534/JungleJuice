@@ -6,7 +6,7 @@
 
 public class DLLNode <T>
 {
-  private T_cargo;    //cargo may only be of type String
+  private T _cargo;    //cargo may only be of type String
   private DLLNode<T> _nextNode, _prevNode; //pointers to next, prev DLLNodes
 
 
