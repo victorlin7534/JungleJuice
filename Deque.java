@@ -23,10 +23,10 @@ public interface Deque<T> {
     //returns true if deque is empty, false otherwise
     public boolean isEmpty();
 
-    //returns an iterator to allow for-each loop from front to end
+/*    //returns an iterator to allow for-each loop from front to end
     public Iterator<T> iterator();
 
     //returns an iterator to allow for-each loop from end to front
-    public Iterator<T> Diterator();
+    public Iterator<T> Diterator();*/
 
 }
