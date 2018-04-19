@@ -1,10 +1,10 @@
 public interface Deque<T> {
 
     //add element to the front of collection
-    public void enqueFront(T x);
+    public void enqueueFront(T x);
 
     //add element to the end of the collection
-    public void enqueEnd(T x);
+    public void enqueueEnd(T x);
 
     //returns element at front without dequeFront
     public T peekFront();
@@ -14,11 +14,11 @@ public interface Deque<T> {
 
     //removes element at front of deque
     //returns removed element
-    public T dequeFront();
+    public T dequeueFront();
 
     //removes element at end of deque
     //returns removed element
-    public T dequeEnd();
+    public T dequeueEnd();
 
     //returns true if deque is empty, false otherwise
     public boolean isEmpty();
