@@ -21,12 +21,12 @@ public class QQKachoo<T> implements Deque<T>{
 
     //returns element at front without dequeFront
     public T peekFront(){
-
+	return _front.getCargo();
     }
 
     //returns element at end without dequeEnd
     public T peekEnd(){
-
+	return _end.getCargo();
     }
 
     //removes element at front of deque
@@ -43,7 +43,7 @@ public class QQKachoo<T> implements Deque<T>{
 
     //returns true if deque is empty, false otherwise
     public boolean isEmpty(){
-
+	return _size == 0;
     }
 
     //returns an iterator to allow for-each loop from front to end
