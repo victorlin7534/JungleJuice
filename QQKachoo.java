@@ -4,24 +4,27 @@ public class QQKachoo<T> implements Deque<T>{
     private int _size;
     
     public QQKachoo(){
-		_front = new DLLNode<T>(null,null,null);
-		_end = _front;
+		_front = _end = null;
 		_size = 0;
     }
     
     //add element to the front of collection
     public void enqueueFront(T x){
-    	_front = new DLLNode<T>(x,_end,_front);
+    	_front = new DLLNode<T>(x,null,_front);
     	if(isEmpty())
     		_end = _front;
+    	else
+    		_front.getNext().setPrev(_front);
     	_size++;
     }
 
     //add element to the end of the collection
     public void enqueueEnd(T x){
-    	_end = new DLLNode<T>(x,_end,_end);
+    	_end = new DLLNode<T>(x,_end,null);
     	if(isEmpty())
     		_front = _end;
+    	else
+    		_end.getPrev().setNext(_end);
     	_size++;
     }
 
