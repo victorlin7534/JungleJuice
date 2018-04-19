@@ -10,6 +10,7 @@ implement:
  3. enqueue(Front/End)()
  4. dequeue(Front/End)()
  5. (D)iterator()
+ 
 addition: 
  1) toString()
 
