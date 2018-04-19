@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class QQKachoo<T> implements Deque<T>{
 
     private DLLNode<T> _front, _end;
@@ -59,16 +61,16 @@ public class QQKachoo<T> implements Deque<T>{
     public boolean isEmpty(){
 	return _size == 0;
     }
-/*
+
     //returns an iterator to allow for-each loop from front to end
     public Iterator<T> iterator(){
-
+    	return new FrontIterator<T>(_front);
     }
 
     //returns an iterator to allow for-each loop from end to front
     public Iterator<T> Diterator(){
-
-    }*/
+    	return new EndIterator<T>(_end);
+    }
 
     public String toString(){
     	String str = "FRONT-->";
