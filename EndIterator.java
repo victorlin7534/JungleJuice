@@ -20,6 +20,6 @@ public class EndIterator<T> implements Iterator<T>{
 	}
 
 	public void remove(){
-
+		
 	}
 }

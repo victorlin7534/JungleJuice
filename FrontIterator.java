@@ -22,6 +22,5 @@ public class FrontIterator<T> implements Iterator<T>{
 	public void remove(){
 		
 	}
-
 }
 
