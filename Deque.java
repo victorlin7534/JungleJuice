@@ -26,7 +26,7 @@ public interface Deque<T> {
     //returns an iterator to allow for-each loop from front to end
     public Iterator<T> iterator();
 
-    //returns an iterator to allow for-each loop from end to fron
+    //returns an iterator to allow for-each loop from end to front
     public Iterator<T> Diterator();
 
 }
