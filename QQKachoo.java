@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class QQKachoo<T> implements Deque<T>{
+public class QQKachoo<T> implements Deque<T>, Iterable<T>{
 
     private DLLNode<T> _front, _end;
     private int _size;

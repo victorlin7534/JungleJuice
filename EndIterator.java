@@ -19,7 +19,5 @@ public class EndIterator<T> implements Iterator<T>{
 		return alias.getCargo();
 	}
 
-	public void remove(){
-		
-	}
+	public void remove(){}
 }

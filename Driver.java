@@ -1,7 +1,7 @@
 public class Driver{
     public static void main(String []args){
-    	Deque<String> test1 = new QQKachoo<String>();
-    	
+    	QQKachoo<String> test1 = new QQKachoo<String>();
+
     	System.out.println(test1.isEmpty());
 
     	test1.enqueueFront("cat");
@@ -20,9 +20,11 @@ public class Driver{
     	System.out.println(test1);
     	System.out.println(test1.isEmpty());
 
+    	System.out.println("\ntest iterator");
     	for(String x:test1)
     		System.out.println(x);
 
+    	System.out.println("\nremoveing");
     	while(!test1.isEmpty()){
     		System.out.println(test1.peekFront() + "\t" + test1.dequeueFront());
     		System.out.println(test1.peekEnd() + "\t" + test1.dequeueEnd());

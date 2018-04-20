@@ -19,8 +19,6 @@ public class FrontIterator<T> implements Iterator<T>{
 		return alias.getCargo();
 	}
 
-	public void remove(){
-		
-	}
+	public void remove(){}
 }
 
