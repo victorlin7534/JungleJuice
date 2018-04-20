@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public interface Deque<T> {
+public interface Deque<T> extends Iterable<T>{
 
     //add element to the front of collection
     public void enqueueFront(T x);
@@ -29,6 +29,6 @@ public interface Deque<T> {
     public Iterator<T> iterator();
 
     //returns an iterator to allow for-each loop from end to front
-    public Iterator<T> Diterator();
+    public Iterator<T> diterator();
 
 }

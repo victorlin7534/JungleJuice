@@ -29,7 +29,7 @@ public class Driver{
     		System.out.println(x);
 
         System.out.println("\ntest diterator");
-        Iterator<String> it = test1.Diterator();
+        Iterator<String> it = test1.diterator();
         while(it.hasNext())
             System.out.println(it.next());
 
@@ -41,5 +41,34 @@ public class Driver{
 
     	System.out.println("\n"+test1);
     	System.out.println(test1.isEmpty());
+
+
+	QQKachoo<String> itestf = new QQKachoo<String>();
+	QQKachoo<String> iteste = new QQKachoo<String>();
+	for (int i = 0; i<10; i++){
+	    itestf.enqueueFront(i+"");
+	    iteste.enqueueFront(i+"");
+	    
+	}
+
+	Iterator<String> f = itestf.iterator();
+	Iterator<String>e=iteste.diterator();
+
+	
+	System.out.println(itestf);
+
+	while (f.hasNext()){
+	    System.out.print(f.next()+ " ");
+	    f.remove();
+	}
+	System.out.println(itestf);
+	System.out.println(iteste);
+
+	while (e.hasNext()){
+	    
+	    System.out.print(e.next()+ " ");
+	    e.remove();
+	}
+	System.out.println(iteste);
     }
 }
