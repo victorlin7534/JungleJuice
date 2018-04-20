@@ -5,15 +5,18 @@ Pd1
 
 ## TO-DO List
 implement:
+ 1. (D)iterator()
+     * remove()
+ 
+addition: 
+ 1) toString()
+ 
+## Done
  1. isEmpty()
  2. peek(Front/End)()
  3. enqueue(Front/End)()
  4. dequeue(Front/End)()
- 5. (D)iterator()
  
-addition: 
- 1) toString()
-
 ## Dev Plan
 1) complete implementation
 2) create a driver class to test implementation of Deque
