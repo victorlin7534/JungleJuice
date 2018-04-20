@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class Driver{
     public static void main(String []args){
     	QQKachoo<String> test1 = new QQKachoo<String>();
@@ -16,6 +18,8 @@ public class Driver{
     	test1.enqueueEnd("flag");
     	test1.enqueueFront("pear");
     	test1.enqueueEnd("pear");
+        test1.enqueueFront("F");
+        test1.enqueueEnd("E");
 
     	System.out.println(test1);
     	System.out.println(test1.isEmpty());
@@ -24,13 +28,18 @@ public class Driver{
     	for(String x:test1)
     		System.out.println(x);
 
+        System.out.println("\ntest diterator");
+        Iterator<String> it = test1.Diterator();
+        while(it.hasNext())
+            System.out.println(it.next());
+
     	System.out.println("\nremoveing");
     	while(!test1.isEmpty()){
     		System.out.println(test1.peekFront() + "\t" + test1.dequeueFront());
     		System.out.println(test1.peekEnd() + "\t" + test1.dequeueEnd());
     	}
 
-    	System.out.println(test1);
+    	System.out.println("\n"+test1);
     	System.out.println(test1.isEmpty());
     }
 }
