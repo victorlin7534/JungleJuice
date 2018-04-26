@@ -25,3 +25,8 @@ addition:
 ## Rationale
    (doubly-linked) node-based architecture is the most efficient data structure because it enables the deque to have enqueue() and dequeue() run in constant time. Furthermore, it bypasses the size restriction posed by an array-based deque(unless a new array is made).
    The methods are the fundamental characteristics of the ADT deque. iterator() is chosen due to it making FOREACH available in the class. 
+
+## Post-Review Edits
+	1) exception handling
+	2) more detailed documentation
+	3) add heading
